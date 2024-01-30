@@ -17,5 +17,10 @@ int print_hello_world()
 
 unsigned int factorial(unsigned int number)
 {
+    if (number == 11)
+    {
+        int i{ 1 };
+    }
+
     return number <= 1 ? 1 : factorial(number - 1) * number;
 }
