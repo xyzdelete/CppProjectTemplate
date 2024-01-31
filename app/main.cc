@@ -15,17 +15,17 @@
 using json = nlohmann::json;
 namespace fs = std::filesystem;
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
     std::cout << "JSON: " << NLOHMANN_JSON_VERSION_MAJOR << "."
-              << NLOHMANN_JSON_VERSION_MINOR << "."
-              << NLOHMANN_JSON_VERSION_PATCH << '\n';
+        << NLOHMANN_JSON_VERSION_MINOR << "."
+        << NLOHMANN_JSON_VERSION_PATCH << '\n';
     std::cout << "FMT: " << FMT_VERSION << '\n';
     std::cout << "CXXOPTS: " << CXXOPTS__VERSION_MAJOR << "."
-              << CXXOPTS__VERSION_MINOR << "." << CXXOPTS__VERSION_PATCH
-              << '\n';
+        << CXXOPTS__VERSION_MINOR << "." << CXXOPTS__VERSION_PATCH
+        << '\n';
     std::cout << "SPDLOG: " << SPDLOG_VER_MAJOR << "." << SPDLOG_VER_MINOR
-              << "." << SPDLOG_VER_PATCH << '\n';
+        << "." << SPDLOG_VER_PATCH << '\n';
     std::cout << "\n\nUsage Example:\n";
 
     // Compiler Warning and clang tidy error
@@ -76,7 +76,7 @@ int main(int argc, char **argv)
         fmt::print("Opening file: {}\n", filename);
     }
 
-    auto ifs = std::ifstream{filename};
+    auto ifs = std::ifstream{ filename };
 
     if (!ifs.is_open())
     {
